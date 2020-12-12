@@ -12,6 +12,8 @@ import pickle
 import flasgger
 from flasgger import Swagger
 
+
+
 app=Flask(__name__)
 Swagger(app)
 pickle_in=open('classifier.pkl','rb')

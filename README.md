@@ -9,7 +9,10 @@ Using the Random Forest algorithm on UCI banknote authentication Data Set to cla
 1. Model development in python
 2. Creating pickle file of python code
 3. Creation of simple web app by using Flask and flasgger
-4. Containerazition of the model by using Docker Containers
+4. Model deployment on heroku platform
+5. Containerazition of the model by using Docker Containers
+
+App: https://currency-authenticator.herokuapp.com/apidocs/#/default/get_predict
 
 ![ss2](https://user-images.githubusercontent.com/44450467/101834663-f0430c80-3b3a-11eb-8bac-b3bccccbf801.PNG)
 

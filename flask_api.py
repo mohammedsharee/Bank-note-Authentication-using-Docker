@@ -25,7 +25,7 @@ def welcome():
 def predict_note_authentication():
     
     """Let's Authenticate the Banks Note 
-    This is using docstrings for specifications.
+    Please enter the data of currency notes which were extracted from images.
     ---
     parameters:  
       - name: variance
@@ -53,7 +53,16 @@ def predict_note_authentication():
     curtosis=request.args.get('curtosis')
     entropy=request.args.get('entropy')
     prediction=classifier.predict([[variance,skewness,curtosis,entropy]])
-    return 'The predicted value is'+ str(prediction)
+    
+    if prediction==0:
+        output1='It is a genuine currency note'
+        return ' '+ str(output1)
+    else:
+        output2='It is a fake currency note'
+        return ' '+ str(output2)
+    
+    
+#    return 'The predicted value is'+ str(prediction)
 
 if __name__=='__main__':
     app.run()
